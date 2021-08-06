@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Cart Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js" async></script>
+</head>
+<body>
+    <h2 class="ti">Clothing Shop</h2>
+    <div class="container">
+        <div class="articles">
+            <div class="card">
+                <img class="prod-img" src="images/image.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand1">Nike</h3>
+                    <h4 id="price1">200.90</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity1" name="quantity1" min="1" max="99" value="1">
+                    <select id="size1" name="size1" onclick="deleteMessage('message1')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="addToCart(1)">Add</button>
+                    </div>
+                </div>
+                <p id="message1"></p>  
+                 <!-- please select a size -->
+            </div>
+
+            <div class="card">
+                <img class="prod-img" src="images/levis4.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand2">Levi's</h3>
+                    <h4 id="price2">1.90</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity2" name="quantity2" min="1" max="99" value="1">
+                    <select id="size2" name="size2" onclick="deleteMessage('message2')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="addToCart(2)">Add</button>
+                    </div>
+                </div>
+                <p id="message2"></p>
+            </div>
+
+
+            <div class="card">
+                <img class="prod-img" src="images/puma.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand3">Puma</h3>
+                    <h4 id="price3">16.90</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity3" name="quantity3" min="1" max="99" value="1">
+                    <select id="size3" name="size3" onclick="deleteMessage('message3')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="addToCart(3)">Add</button>
+                    </div>
+                </div>
+                <p id="message3"></p>
+            </div>
+
+
+            <div class="card">
+                <img class="prod-img" src="images/adidas-original.jpeg">
+                <div class="prod">
+                    <h3 class="tit" id="brand4">Adidas</h3>
+                    <h4 id="price4">18.90</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity4" name="quantity4" min="1" max="99" value="1">
+                    <select id="size4" name="size4" onclick="deleteMessage('message4')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="addToCart(4)">Add</button>
+                    </div>
+                </div>
+                <p id="message4"></p>
+            </div>
+
+
+            
+            <div class="card">
+                <img class="prod-img" src="images/higlender.png">
+                <div class="prod">
+                    <h3 class="tit" id="brand5">Higlander</h3>
+                    <h4 id="price5">16.90</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity5" name="quantity5" min="1" max="99" value="1">
+                    <select id="size5" name="size5" onclick="deleteMessage('message5')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="addToCart(5)">Add</button>
+                    </div>
+                </div>
+                <p id="message5"></p>
+            </div>
+
+
+
+            <div class="card">
+                <img class="prod-img" src="images/uspolo1.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand6">US polo</h3>
+                    <h4 id="price6">15.90</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity6" name="quantity6" min="1" max="99" value="1">
+                    <select id="size6" name="size6" onclick="deleteMessage('message6')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="addToCart(6)">Add</button>
+                    </div>
+                </div>
+                <p id="message6"></p>
+            </div>
+
+
+            
+            <div class="card">
+                <img class="prod-img" src="images/Roaster.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand7">Roaster</h3>
+                    <h4 id="price7">25.90</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity7" name="quantity7" min="1" max="99" value="1">
+                    <select id="size7" name="size7" onclick="deleteMessage('message7')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="addToCart(7)">Add</button>
+                    </div>
+                </div>
+                <p id="message7"></p>
+            </div>
+
+
+
+            <div class="card">
+                <img class="prod-img" src="images/HereNow.jpg">
+                <div class="prod">
+                    <h3 class="tit" id="brand8">Here&Now</h3>
+                    <h4 id="price8">36.25</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity8" name="quantity8" min="1" max="99" value="1">
+                    <select id="size8" name="size8" onclick="deleteMessage('message8')">
+                        <option value="size" disabled selected>Size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="addToCart(8)">Add</button>
+                    </div>
+                </div>
+                <p id="message8"></p>
+            </div>
+
+        </div>
+        <div class="cart">
+            <h3 class="tit">My Cart</h3>
+            <!-- list of the articles in the cart -->
+            <ul id="items"> </ul> 
+
+              <!-- Clear list button -->
+            <div class="clear-list"></div>
+            <h3 id="total" style="text-align: right;">Total: 0 ₹</h3>
+        </div>
+    </div>
+</body>
+</html>
